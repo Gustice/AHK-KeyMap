@@ -1,0 +1,109 @@
+Helpfile for KeyMap.ahk
+  Note: FileEncoding utf-8
+
+
+Defined HotKeys:
+Win+C         => Run calc.exe | 
+NumPad-.                      | Fast hits of Numpad-',' are replaced by .
+Ctrl+NumPad-. => send .       | prints '.'
+AltGr+-       => ‒            | en - long hyphen / minus
+AltGr+Shift+- => —            | em - dash
+AltGr+A       => α            | 
+AltGr+B       => β            | 
+AltGr+G       => γ            | 
+AltGr+D       => δ            | 
+AltGr+N       => η            | 
+AltGr+T       => ϑ            | 
+AltGr+L       => λ            | 
+AltGr+M       => μ            | 
+AltGr+P       => π            | 
+AltGr+R       => ρ            | 
+AltGr+S       => σ            | 
+AltGr+F       => φ            | 
+AltGr+W       => ω            | 
+AltGr+Shift+D => Δ            | 
+AltGr+Shift+P => Π            | 
+AltGr+Shift+S => Σ            | 
+AltGr+Shift+W => Ω            | 
+Ctrl+Shift+C                  | copys floating number to clipboard and replaces dot by comma or vice versa
+
+
+Defined HotStrings:
+#dt            | Prints current date in Format: dd.mm.yyyy
+#dtf           | Prints current date in Format: yyyy_mm_dd
+#dts           | Prints current date in Format: dd.mm.yy
+#en       => – | 
+#em       => — | 
+#dia      => Ø | 
+#alpha    => α | 
+#beta     => β | 
+#gamma    => γ | 
+#delta    => δ | 
+#deltavar => ∂ | 
+#epsilon  => ε | 
+#zeta     => ζ | 
+#eta      => η | 
+#theta    => θ | 
+#thetavar => ϑ | 
+#iota     => ι | 
+#kappa    => κ | 
+#lambda   => λ | 
+#my       => μ | 
+#ny       => ν | 
+#xi       => ξ | 
+#omikron  => ο | 
+#pi       => π | 
+#rho      => ρ | 
+#sigma    => σ | 
+#tau      => τ | 
+#ypsilon  => υ | 
+#phi      => ϕ | 
+#phivar   => φ | 
+#chi      => χ | 
+#psi      => ψ | 
+#omega    => ω | 
+#Alpha    => Α | 
+#Beta     => Β | 
+#Gamma    => Γ | 
+#Delta    => Δ | 
+#Epsilon  => Ε | 
+#Zeta     => Ζ | 
+#Eta      => Η | 
+#Theta    => Θ | 
+#Iota     => Ι | 
+#Kappa    => Κ | 
+#Lambda   => Λ | 
+#My       => Μ | 
+#Ny       => Ν | 
+#Xi       => Ξ | 
+#Omikron  => Ο | 
+#Pi       => Π | 
+#Rho      => Ρ | 
+#Sigma    => Σ | 
+#Tau      => Τ | 
+#Ypsilon  => Υ | 
+#Phi      => Φ | 
+#Chi      => Χ | 
+#Psi      => Ψ | 
+#Omega    => Ω | 
+#Ohm      => Ω | 
+#Prod     => ∏ | 
+#Sum      => ∑ | 
+#>=       => ≥ | 
+#<=       => ≤ | 
+#==       => ≡ | 
+#uneq     => ≠ | 
+#approx   => ≈ | 
+#cdot     => ∙ | 
+#not      => ⌐ | 
+#avrg     => Ø | 
+#pm       => ± | 
+#hdots    => … | 
+#vdots    => ⁞ | 
+#pmille   => ‰ | 
+#inf      => ∞ | 
+#->       => → | 
+#<-       => ← | 
+#-^       => ↑ | 
+#-v       => ↓ | 
+#<->      => ↔ | 
