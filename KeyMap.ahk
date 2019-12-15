@@ -1,5 +1,6 @@
 ﻿;IMPORTANT, you must save this script as UTF-8 to make it work.
 
+#Persistent  ; Keep the script running until the user exits it.
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -7,10 +8,25 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 Menu, Tray, Icon, shell32.dll, 75 ; Tray-Icon: Das Symbol in der Leiste. Symbole einehbar durch Iconwahl mit Quellpfad auf C:\Windows\System32\shell32.dll
 
-#C:: Run calc.exe
+Menu, Tray, Add  ; Seperator
+Menu, Tray, Add, Show Help, HelpHandler
+FileInstall, KeyMap.txt, KeyMap.txt
+return
 
+HelpHandler:
+Run KeyMap.txt
+return
 
+; Used Hotkeys:
+  ; #    Win
+  ; !    Alt
+  ; ^    Control
+  ; +    Shift
+  ; <^>! AltGr
+  ; * Allows extra modifiers
+  ; ~ Doesn't block original hotkey
 
+#C:: Run calc.exe ; Runs Calculator
 
 OSD(text)
 {
@@ -39,7 +55,6 @@ Return
 Return
 
 ::#dts:: ; Prints current date in Format: dd.mm.yy
-    ;OSD("Aktuelles Datum einfügen")
 	FormatTime,Datum,,dd'.'MM'.'yy
 	Send, %Datum% 
 Return
