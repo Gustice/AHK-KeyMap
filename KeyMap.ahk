@@ -10,11 +10,13 @@ Menu, Tray, Icon, shell32.dll, 75 ; Tray-Icon: Das Symbol in der Leiste. Symbole
 
 Menu, Tray, Add  ; Seperator
 Menu, Tray, Add, Show Help, HelpHandler
-FileInstall, KeyMap.txt, KeyMap.txt
+
+FileEncoding , UTF-8
+FileInstall, KeyMap.txt, KeyMapOutput.txt, 1
 return
 
 HelpHandler:
-Run KeyMap.txt
+Run  KeyMapOutput.txt
 return
 
 ; Used Hotkeys:
