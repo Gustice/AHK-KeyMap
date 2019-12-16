@@ -46,11 +46,10 @@ Return
 Return
 
 ;Special characters
-<^>!-::‒	; en - long hyphen / minus
+<^>!-::–	; en - long hyphen / minus
 <^>!+-::—	; em - dash
 ::#en::–
 ::#em::—
-::#dia::Ø
 ;::#euro::€
 ; <^>!+e::€
 
@@ -67,7 +66,7 @@ Return
 <^>!p::π
 <^>!r::ρ
 <^>!s::σ
-<^>!f::φ
+<^>!f::ϕ
 <^>!w::ω
 
 <^>!+d::Δ
@@ -143,7 +142,8 @@ Return
 ::#cdot::∙
 ::#not::⌐
 ::#avrg::Ø
-::#pm::±
+::#dia::Ø
+::#+-::±
 ::#hdots::…
 ::#vdots::⁞
 ::#pmille::‰

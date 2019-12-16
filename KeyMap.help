@@ -4,7 +4,7 @@ Helpfile for KeyMap.ahk
 
 Defined HotKeys:
 Win+C         => Run calc.exe | Runs Calculator
-AltGr+-       => ‒            | en - long hyphen / minus
+AltGr+-       => –            | en - long hyphen / minus
 AltGr+Shift+- => —            | em - dash
 AltGr+A       => α            | 
 AltGr+B       => β            | 
@@ -17,7 +17,7 @@ AltGr+M       => μ            |
 AltGr+P       => π            | 
 AltGr+R       => ρ            | 
 AltGr+S       => σ            | 
-AltGr+F       => φ            | 
+AltGr+F       => ϕ            | 
 AltGr+W       => ω            | 
 AltGr+Shift+D => Δ            | 
 AltGr+Shift+P => Π            | 
@@ -34,7 +34,6 @@ Defined HotStrings:
 #dts           | Prints current date in Format: dd.mm.yy
 #en       => – | 
 #em       => — | 
-#dia      => Ø | 
 #alpha    => α | 
 #beta     => β | 
 #gamma    => γ | 
@@ -97,7 +96,8 @@ Defined HotStrings:
 #cdot     => ∙ | 
 #not      => ⌐ | 
 #avrg     => Ø | 
-#pm       => ± | 
+#dia      => Ø | 
+#+-       => ± | 
 #hdots    => … | 
 #vdots    => ⁞ | 
 #pmille   => ‰ | 
