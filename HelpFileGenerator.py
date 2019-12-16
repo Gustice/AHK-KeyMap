@@ -208,7 +208,7 @@ with open(file, 'r', encoding=enc) as fStream:
 
 # Write found Objects to helpfile
 print("Writing help output to file:")
-nFile = name + ".txt"
+nFile = name + ".help"
 with open(nFile, 'w', encoding=enc) as oStream:
     oStream.write("Helpfile for {}\n".format(file))
     oStream.write("  Note: FileEncoding {}\n".format(enc))

@@ -12,7 +12,7 @@ Menu, Tray, Add  ; Seperator
 Menu, Tray, Add, Show Help, HelpHandler
 
 FileEncoding , UTF-8
-FileInstall, KeyMap.txt, KeyMapOutput.txt, 1 ; Creating HelpFile that will be opend at HelpHandler
+FileInstall, KeyMap.help, KeyMapOutput.txt, 1 ; Creating HelpFile that will be opend at HelpHandler
 return
 
 HelpHandler:
