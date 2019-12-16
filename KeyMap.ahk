@@ -12,7 +12,7 @@ Menu, Tray, Add  ; Seperator
 Menu, Tray, Add, Show Help, HelpHandler
 
 FileEncoding , UTF-8
-FileInstall, KeyMap.txt, KeyMapOutput.txt, 1
+FileInstall, KeyMap.txt, KeyMapOutput.txt, 1 ; Creating HelpFile that will be opend at HelpHandler
 return
 
 HelpHandler:
@@ -30,22 +30,6 @@ return
 
 #C:: Run calc.exe ; Runs Calculator
 
-OSD(text)
-{
-#Persistent
-Progress, hide x1050 Y900 b1 w350 h27 zh0 FM10 cwEEEEEE ct111111,, %text%, AutoHotKeyProgressBar, Verdana BRK
-WinSet, TransColor, 000000 120, AutoHotKeyProgressBar
-Progress, show
-SetTimer, RemoveToolTip, 2000
-Return
-
-RemoveToolTip:
-SetTimer, RemoveToolTip, Off
-Progress, Off
-return
-}
-
-
 ::#dt:: ; Prints current date in Format: dd.mm.yyyy
 	FormatTime,Datum,,dd'.'MM'.'yyyy
 	Send, %Datum% 
@@ -61,20 +45,13 @@ Return
 	Send, %Datum% 
 Return
 
-~$NUMPADDOT:: ; Fast hits of Numpad-',' are replaced by .
-IF (A_PRIORHOTKEY= "~$NUMPADDOT" AND A_TIMESINCEPRIORHOTKEY < 150)
-  SEND, {BS 2}.
-RETURN
-
-^NumpadDot::send . ; prints '.' 
-
 ;Special characters
 <^>!-::‒	; en - long hyphen / minus
 <^>!+-::—	; em - dash
 ::#en::–
 ::#em::—
 ::#dia::Ø
-; ::#euro::€
+;::#euro::€
 ; <^>!+e::€
 
 ; Greek characters 'Key-combinations'
@@ -178,7 +155,15 @@ RETURN
 ::#-v::↓
 ::#<->::↔
 
-^+c:: ; copys floating number to clipboard and replaces dot by comma or vice versa
+
+~$NUMPADDOT:: ; Fast hits of Numpad-',' are replaced by . (perhaps a german only Problem with the .-Key on Numpad)
+IF (A_PRIORHOTKEY= "~$NUMPADDOT" AND A_TIMESINCEPRIORHOTKEY < 150)
+  SEND, {BS 2}.
+RETURN
+
+^NumpadDot::send . ; prints '.' (perhaps a german only Problem with the .-Key on Numpad)
+
+^+c:: ; copys floating number to clipboard and replaces dot by comma or vice versa (a german problem)
   clipboard = 	; emptys clipboard
   send ^c		; copy
   Sleep 50

@@ -3,9 +3,7 @@ Helpfile for KeyMap.ahk
 
 
 Defined HotKeys:
-Win+C         => Run calc.exe | 
-NumPad-.                      | Fast hits of Numpad-',' are replaced by .
-Ctrl+NumPad-. => send .       | prints '.'
+Win+C         => Run calc.exe | Runs Calculator
 AltGr+-       => ‒            | en - long hyphen / minus
 AltGr+Shift+- => —            | em - dash
 AltGr+A       => α            | 
@@ -25,7 +23,9 @@ AltGr+Shift+D => Δ            |
 AltGr+Shift+P => Π            | 
 AltGr+Shift+S => Σ            | 
 AltGr+Shift+W => Ω            | 
-Ctrl+Shift+C                  | copys floating number to clipboard and replaces dot by comma or vice versa
+NumPad-.                      | Fast hits of Numpad-',' are replaced by . (perhaps a german only Problem with the .-Key on Numpad)
+Ctrl+NumPad-. => send .       | prints '.' (perhaps a german only Problem with the .-Key on Numpad)
+Ctrl+Shift+C                  | copys floating number to clipboard and replaces dot by comma or vice versa (a german problem)
 
 
 Defined HotStrings:
