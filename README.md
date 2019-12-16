@@ -14,7 +14,7 @@ If you already have AutoHotkey installed you can clone the project or download *
 
 The script starts by Clicking on the KeyMap.exe/ahk. You will notice a small new icon in your System tray
 
-![Tray Icon](Pics\TrayIcon.jpg)
+![Tray Icon](https://github.com/Gustice/AHK-KeyMap/blob/master/Pics/TrayIcon.jpg)
 
 Now you can already use the defined Hotkeys and Hotstrings:
 
@@ -25,5 +25,5 @@ Now you can already use the defined Hotkeys and Hotstrings:
 
 You can open the file *KeyMap.ahk* in order to see the defined functions. If you are using the *KeyMap.exe* you can start a help dialogue by right click on the Tray icon an then select *Show Help*. This will open a text file that shows you all defined Features partially with comments.
 
-![Start Help Dialogue](Pics\HelpDialogue.jpg)
+![Start Help Dialogue](https://github.com/Gustice/AHK-KeyMap/blob/master/Pics/HelpDialogue.jpg)
 
